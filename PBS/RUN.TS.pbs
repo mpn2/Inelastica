@@ -1,0 +1,21 @@
+#!/bin/tcsh
+#PBS -N $DEFJOBNAME$
+#PBS -V
+#PBS -l walltime=96:00:00
+#PBS -l nodes=$NODES$
+
+# Template PBS script for TranSIESTA calculations
+# Inelastica will change:
+#   $DEFJOBNAME$ to a default jobname based on the directory name.
+# You need to define
+#   $NODES$
+
+setenv NODES `cat $PBS_NODEFILE | wc -l`   # Calculate total number of cores
+
+cd $PBS_O_WORKDIR                          # Change to directory where submitted
+setenv OMP_NUM_THREADS 1
+setenv OPENBLAS_NUM_THREADS 1
+mpirun -np ${NODES} transiesta < ./RUN.fdf > ./RUN.out 
+
+wait
+#end

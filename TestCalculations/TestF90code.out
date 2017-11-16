@@ -1,0 +1,57 @@
+TESTING reading routines:
+SiestaIO.__ReadTSHSFile: Reading ../TestCalculations/Self-energy-FCC111/ELEC-1x1/Au3D_BCA.TSHS
+Found 3 atoms, (1350, 27) orbitals in super-, unit-cell
+Found 3 atoms, (1350, 27) orbitals in super-, unit-cell
+Reading of file Self-energy-FCC111/ELEC-1x1/Au3D_BCA.TSHS PASSED!
+
+SiestaIO.__ReadTSHSFile: Reading ../TestCalculations/sample.onlyS
+Found 44 atoms, (5580, 620) orbitals in super-, unit-cell
+Found 44 atoms, (5580, 620) orbitals in super-, unit-cell
+Reading of file sample.onlyS PASSED!
+
+TESTING removeUnitCellXij method
+SiestaIO.__ReadTSHSFile: Reading ../TestCalculations/Self-energy-FCC111/ELEC-1x1//Au3D_BCA.TSHS
+Found 3 atoms, (1350, 27) orbitals in super-, unit-cell
+Found 3 atoms, (1350, 27) orbitals in super-, unit-cell
+Maximum difference between Xij : -0
+
+TESTING pyTBT.surfaceGF method (1x1 vs 3x3)
+Found 3 atoms, (1350, 27) orbitals in super-, unit-cell
+ Checking k-point: 0.511481,0.058827,0.012924
+Max difference kpointhelper:  3.63648495708e-15
+Max difference for self-energy:  0.0
+ Checking k-point: 0.014796,0.672054,0.092348
+Max difference kpointhelper:  5.47536641254e-15
+Max difference for self-energy:  0.0
+ Checking k-point: 0.044586,0.552998,0.202086
+Max difference kpointhelper:  2.37622683377e-15
+Max difference for self-energy:  0.0
+ Checking k-point: 0.985538,0.778728,0.831606
+Max difference kpointhelper:  7.19585376324e-15
+Max difference for self-energy:  0.0
+ Checking k-point: 0.700507,0.878762,0.666785
+Max difference kpointhelper:  4.39625888431e-15
+Max difference for self-energy:  0.0
+ Checking k-point: 0.345942,0.285414,0.753248
+Max difference kpointhelper:  2.80866677486e-15
+Max difference for self-energy:  0.0
+ Checking k-point: 0.851904,0.305759,0.464958
+Max difference kpointhelper:  3.45712936638e-15
+Max difference for self-energy:  0.0
+ Checking k-point: 0.433625,0.426978,0.904503
+Max difference kpointhelper:  3.55444797897e-15
+Max difference for self-energy:  0.0
+ Checking k-point: 0.547451,0.656622,0.962507
+Max difference kpointhelper:  3.02013314551e-15
+Max difference for self-energy:  0.0
+ Checking k-point: 0.385230,0.446158,0.810015
+Max difference kpointhelper:  2.31893449507e-15
+Max difference for self-energy:  0.0
+Maximum error :  7.19585376324e-15
+
+###############################################################
+###############################################################
+Test passed for remove Xij, distributeg0, readnewtshs, and setkpoint!
+###############################################################
+###############################################################
+
